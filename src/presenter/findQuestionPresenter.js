@@ -1,6 +1,5 @@
 import question from "../model/question"
 
-//"user hardcodat"
 class FindQuestionPresenter {
 
     find()

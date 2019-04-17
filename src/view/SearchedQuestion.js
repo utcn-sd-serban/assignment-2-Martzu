@@ -1,7 +1,5 @@
 import React from 'react';
-//nu-mi trebe user aicea, ci in presenter si il pot trimite din smart component
-//da cand creez un nou question imi trebuie si useru, da pot sa-l adaug dupa
-//da-l in ma0sa, il harcodez
+
 const SearchedQuestion = ({searchedQuestion}) => (
 
 

@@ -1,16 +1,15 @@
 import question from "../model/question"
 import findQuestionPresenter from "./findQuestionPresenter";
 
-//"user hardcodat"
 class QuestionsListPresenter {
     onCreateQuestion()
     {
         window.location.assign("#/create-question");
     }
 
-    onChange(property, value)//asta face schimbarea
+    onChange(property, value)
     {
-        question.changeSearchedQuestionProperty(property, value);//de facut view sa vad daca mere
+        question.changeSearchedQuestionProperty(property, value);
 
     }
 
@@ -22,7 +21,6 @@ class QuestionsListPresenter {
 
     searchTitle()
     {
-        debugger;
         findQuestionPresenter.find();
         window.location.assign("#/search-title");
     }

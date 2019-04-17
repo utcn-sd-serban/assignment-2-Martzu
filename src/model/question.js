@@ -64,9 +64,7 @@ class Question extends EventEmitter
 
     searchQuestionsTag()
     {
-        debugger;// de ce Doamne feri ii toSearch bagat in searchedQuestion, WHYY?
         const tagContainingQuestions = this.state.questions.filter((quest) => quest.tags.indexOf(this.state.searchedQuestion.toSearch) !== -1);
-        debugger;
         this.state =
             {
                 ...this.state,
@@ -79,16 +77,12 @@ class Question extends EventEmitter
 
     searchQuestion()
     {
-        debugger;
             const searchedQuestion = this.state.questions.find((quest) => quest.title === this.state.searchedQuestion.toSearch);
             this.state =
                 {
                     ...this.state,
                     searchedQuestion: searchedQuestion
-
-
                 };
-        debugger;
             this.emit("change", this.state);
 
 
@@ -121,7 +115,6 @@ class Question extends EventEmitter
         for (let i = this.state.questions.length - 1; i >= 0; i--) {
             newArray.push(this.state.questions[i]);
         }
-        debugger;
         return newArray;
     }
 }
